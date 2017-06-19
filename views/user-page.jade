@@ -1,0 +1,172 @@
+html 
+	head
+		title Game On
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+		link(href="https://fonts.googleapis.com/css?family=Squada+One|Ubuntu+Condensed|Permanent+Marker|Acme" rel="stylesheet")
+		script(src="http://code.highcharts.com/highcharts.js")
+
+		link(rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")
+		link(rel="stylesheet" href="/stylesheets/style.css" type="text/css")
+		script(src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
+		script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+		script(src="https://code.highcharts.com/highcharts-more.js")
+		script(src="https://code.highcharts.com/modules/exporting.js")
+		script.
+			var availableTags = "#{nameArray}";
+			//- var userFaves = "#{userFaves}";
+			
+			//- console.log(availableTags);
+			if(#{PPGrank} != undefined) {
+				var teamName= "#{teamName}";
+				var position= "#{position}";
+				var fullName= "#{fullName}";
+				var PPGrank = "#{PPGrank}";
+				var ASSrank = "#{ASSrank}";
+				var STLrank = "#{STLrank}";
+				var REBrank = "#{REBrank}";
+				var MINrank = "#{MINrank}";
+				var THREErank = "#{THREErank}";
+				var id = "#{id}";
+				var compPPGrank = "#{compPPGrank}";
+				var compASSrank = "#{compASSrank}";
+				var compSTLrank = "#{compSTLrank}";
+				var compREBrank = "#{compREBrank}";
+				var compMINrank = "#{compMINrank}";
+				var compTHREErank = "#{compTHREErank}";
+				var compName = "#{compName}";
+			}
+			var registered = "#{sessionInfo.registered}";
+			console.log(registered);
+			var user = "#{sessionInfo.username}";
+			//- var favPlayerId = "#{sessionInfo.favPlayer}";
+		script(type='text/javascript' src='/javascripts/script.js')
+	body
+		div.main-content-container.container
+			div.modal.fade#accountSetting(tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel")
+				div.modal-dialog(role="document")
+					div.modal-content
+						div.modal-header
+							button.close(type="button" data-dismiss="modal" aria-label="Close")
+							h4.modal-title#gridSystemModalLabel Welcome, #{sessionInfo.username}
+						div.modal-body
+							div.row
+								div.col-sm-12.text-center.username-form-container
+									table.table.modal-table.table-hover
+										thead
+											tr
+												th.text-center Your User Name
+												th.text-center Action
+										tbody
+											td.text-center.username-row #{sessionInfo.username}
+											td.text-center
+												button.edit-btn(type="button") Edit
+												button.save-btn(type="submit") Save Changes
+									
+							div.row
+								div.col-sm-12.text-center
+								table.table.modal-table.table-hover
+									thead
+									tr
+										th.text-center Player
+										th.text-center Action
+									tbody
+									-if (userFaves != undefined)
+										each val in userFaves
+											tr.text-center
+												td.text-center
+													a(href="/fav_load/#{val}") #{val}
+												td.text-center
+													a(href="/delete/#{val}")
+														button.remove-btn Remove
+							
+											
+						div.modal-footer
+							button.cancel-btn(type="button" data-dismiss="modal") Cancel
+
+			div.row
+				div.nav-bar-container
+					div.col-xs-12.col-sm-12.col-md-12.nav-bar
+						h3#nav-header 
+							a#logout-link(href="/logout") GAME ON 
+						button.btn.settings-button(type="button"  data-toggle="modal" data-target="#accountSetting" ) Favorites
+
+			div.row
+				div.container.option-panel-container.col-xs-12.col-sm-3.col-md-3
+					div.container.option-panel.col-xs-12.col-sm-12.col-md-12
+						h3 Stats
+						div.row
+							div.search-bar.col-xs-6.col-xs-offset-3.col-sm-12.col-md-12
+								form.form-group#search-form(action="/user" method="post")
+									input#search-input(type="text", placeholder="Search", name="search" value="#{fullName}")
+									p.message
+									h5#comparison-message Compare To:
+									select#compare-to
+										option(value="League Average") League Average
+										option(value="League Best") League Best
+										option(value="Another Player") Another Player
+									input#compare-search-input(type="text", placeholder="Search", name="compare" value="League Average")
+									button.compare-btn#compare-submit(type="submit") Submit
+						div.row
+							div.container.pic-container.col-xs-6.col-xs-offset-3.col-sm-12
+								-if("#{photoUrl}" != undefined)
+									img.img-responsive.player-image(src="#{photoUrl}")
+								-else
+									img.img-responsive.player-image(src="http://www.sc.edu/nrotc/images/staff%20photos/no-image-available.png")
+						div.row					
+							div.info.col-xs-6.col-xs-offset-3.col-sm-12
+								-if ("#{fullName}" != undefined)
+									ul
+										li
+											p#list-name Name: #{fullName}
+										li
+											p#list-team Team: #{teamName}
+										li 
+											p#list-position Position: #{position}
+						div.row
+							div.fav-form-container.col-xs-5.col-xs-offset-3.text-center.col-sm-10
+								form.favorite-form(action="/add_fav" method="post")
+									input#fav-input(type="hidden",name="favorite" value="#{id}") 
+									button.compare-btn#favorite-button(type="submit") Add Player to Favorites
+									
+
+				div.charts-container.col-xs-12.col-sm-7.col-md-7
+					div#charts(style="width:100%; height:500px;") 
+					div#stats-table.text-center 
+						table.table.col-xs-12.col-sm-12.col-md-12#data-table
+							h4#table-title Player Stats Per Game
+							thead
+								tr#table-lables
+									th Points
+									th Assists
+									th Steals
+									th Rebounds
+									th 3 Points
+									th Min Played
+							tbody
+								tr#first-player
+									td #{total_points}
+									td #{assists}
+									td #{steals}
+									td #{rebounds}
+									td #{three_points}
+									td #{minutes}
+								tr#second-player
+									td #{comptotal_points}
+									td #{compassists}
+									td #{compsteals}
+									td #{comprebounds}
+									td #{compthree_points}
+									td #{compminutes}
+
+				div.news-container.col-xs-12.col-sm-2.col-md-2
+					h3 News
+					- if (news != undefined)
+						each val in news
+							a(href="#{val[1]}" target="_blank")
+								p.headline= val[0]
+
+					
+
+
+					

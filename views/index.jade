@@ -1,0 +1,97 @@
+html
+	head
+		title Game On
+		link(href="stylesheets/css/jquery.mb.YTPlayer.min.css", media="all", rel="stylesheet", type="text/css")
+		link(href="https://fonts.googleapis.com/css?family=Squada+One|Ubuntu+Condensed" rel="stylesheet")
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+		link(rel="stylesheet" href="/stylesheets/style.css" type="text/css")
+
+		script(src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js")
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		
+		script(src="javascripts/jquery.mb.YTPlayer.min.js" type="text/javascript")
+		script(type='text/javascript' src='/javascripts/script.js')
+
+	body
+		div#bgndVideo.player(data-property="{videoURL:'http://youtu.be/dOZxIpy6Gm4',containment:'body',autoPlay:true, mute:true, startAt:0, stopAt:84, opacity:1, showControls:false, showYTLogo:false}")
+
+		div.main-content-wrapper.container
+			div.container.first-page
+		
+
+		div.main-content-wrapper.container
+			div.first-section.container.text-center
+				div#bgndVideo.player(data-property="{videoURL:'http://youtu.be/dOZxIpy6Gm4',containment:'body',autoPlay:true, mute:true, startAt:0, stopAt:84, opacity:1, showControls:false, showYTLogo:false}")
+				div.row
+					div.col-xs-2.col-xs-offset-10.col-sm-2.col-sm-offset-10.col-md-2.col-md-offset-10.log-in-container
+						button.log-in(onclick="jQuery('#bgndVideo').YTPPause()") Login
+				div.row
+					div.game-on.col-xs-2-offset-5.col-sm-2-offset-5.col-md-2-offset-5
+						h1 
+							span#game GAME 
+							span#on ON
+						
+			
+				div.row
+					div.game-on.game-on-fade.col-xs-2-offset-5.col-sm-2-offset-5.col-md-2-offset-5
+						h3#experience A Data Visualization Experience
+						button#start-btn.game-on-fade(onclick="jQuery('#bgndVideo').YTPPause()") Get Started
+					div.row
+						div.game-on.game-on-fade.col-xs-2-offset-5.col-sm-2-offset-5.col-md-2-offset-5
+							button.about-button(type="button"  data-toggle="modal" data-target="#about") About 
+								span#button-tag GAME ON
+							
+			div.second-section.container
+				a(href='/')
+					img#back-arrow(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDhTPOqr8RKHMZaDJ6NOwFyEmql5fL9DwFbOC04R2N3CPWdIyCTA")
+				div.row
+					div.sign-up-form-container.col-xs-4.col-xs-offset-4.col-sm-4.col-sm-offset-4.col-md-4.col-md-offset-4.text-center
+						form.sign-up(action="/signUp" method="post")
+							div.form-group.signupform
+								label.index-label User Name
+								input.index-input(type='text' placeholder='User Name' name="username")
+							div.form-group.signupform
+								label.index-label  Email
+								input.index-input(type='email' placeholder='Email' name="email")
+							div.form-group.signupform
+								label.index-label  Password
+								input.index-input(type='password' placeholder='Password' name="password")
+							div.form-group
+								label.index-label  
+							button.save-btn(type='submit') Submit
+					div.login-form-container.col-xs-4.col-xs-offset-4.col-sm-4.col-sm-offset-4.col-md-4.col-md-offset-4.text-center
+						form.login(action='/login' method="post")
+							div.form-group.login-form
+								label.index-label Email
+								input.index-input(type='email' placeholder='Email' name="email") 
+							div.form-group.login-form
+								label.index-label Password
+								input.index-input(type='password' placeholder='Password' name="password")
+							button.save-btn(type='submit') Submit
+
+
+
+			div#about.modal.fade(tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel")
+				div.modal-dialog(role="document")
+					div.modal-content
+						div.modal-header
+							button.close(type="button" data-dismiss="modal" aria-label="Close")
+							h4.modal-title#gridSystemModalLabel About
+						div.modal-body
+							div.row
+								div.col-xs-10.col-xs-offset-1.col-sm-10.col-sm-offset-1.col-md-10.col-md-offset-1
+									p Game On is a full stack web app used to visualize sports data. It allows users to visualize player and team stats like never before and perform analyses that have previously been difficult to render. Users can log in with a user name and password, save favorite players, and build visualization charts from player data. Users also get an automatically-updated news feed for timely inspiration of players to compare stats on.
+											
+						div.modal-footer
+							button.cancel-btn(type="button" data-dismiss="modal") Close
+
+
+
+
+
+
+		script.
+			$(function(){
+				$("#bgndVideo").YTPlayer();
+			});
