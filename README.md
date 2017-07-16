@@ -43,8 +43,8 @@ The Get Started button takes a new user to a registration form where they can en
 </p>
 
 ### User Page
-After logging in users are brought to the User page. On first load, the stats for one of the NBAs top players are rendered and displayed in the center of the page. The controls on the left allow the user to build their own chart based on players of their choosing.
-Our backend uses express to query the database and the data is rendered by Highcharts.js. The page is rendered using Pug (Jade).
+After logging in users are brought to the User page. On first load, the stats for one of the NBA's top players are rendered and displayed in the center of the page. The controls on the left allow the user to build their own chart based on players of their choosing.
+Our backend uses express to query the database and the data is rendered by Highcharts.js. Pages are rendered via Pug (Jade).
 Along the right side of the page a news feed allows quick reference for keeping up with the latest events around the league.
 <p align='center'>
     <img src="./public/images/user.png" /></img>
