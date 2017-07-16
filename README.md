@@ -37,15 +37,15 @@ Users also get an automatically-updated basketball news feed to keep them up to 
 
 ### Landing Page
 Users are treated to a full-page background video with a simple logo, log in button (for registered users), and a Get Started button (for unregistered users). An About button gives new users a summary of the site.
-The Get Started button takes a new user to a registration form where they can enter a user name and password. Their data is sent to a MySQL database and the user input is sanitized to avoid insertion attacks. Passwords are encrypted and securely stored in our database.
+The Get Started button takes a new user to a registration form where they can enter a user name and password. User inputs are sanitized to avoid insertion attacks and all passwords are encrypted and securely stored in our SQL database.
 <p align='center'>
     <img src="./public/images/index.png"/></img>
 </p>
 
 ### User Page
-After logging in users are brought to the User page. On first load, the stats for one of the NBAs top players arerendered and displayed in the center of the page. The controls on the left allow the user to build their own chart based on players of their choosing.
-Our backend uses express to query the database for the requested information and the data is rendered by highcharts.js. The page is rendered using Pug (Jade).
-Along the right side of the page a news feed allows a quick reference for keeping up with the latest events around the league.
+After logging in users are brought to the User page. On first load, the stats for one of the NBAs top players are rendered and displayed in the center of the page. The controls on the left allow the user to build their own chart based on players of their choosing.
+Our backend uses express to query the database and the data is rendered by Highcharts.js. The page is rendered using Pug (Jade).
+Along the right side of the page a news feed allows quick reference for keeping up with the latest events around the league.
 <p align='center'>
     <img src="./public/images/user.png" /></img>
 </p>

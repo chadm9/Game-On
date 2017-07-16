@@ -31,27 +31,27 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="259">
-                <caret line="121" column="4" lean-forward="false" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
+              <first_editor relative-caret-position="400">
+                <caret line="47" column="52" lean-forward="true" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
                 <folding>
-                  <marker date="1500214414000" expanded="true" signature="2456:3728" ph="{...}" />
-                  <marker date="1500214414000" expanded="true" signature="2470:2562" ph="{&quot;backgroundColor&quot;: 'rgba(1,1,1,0)'...}" />
-                  <marker date="1500214414000" expanded="true" signature="2576:2629" ph="{&quot;text&quot;: 'Player Ranking'...}" />
-                  <marker date="1500214414000" expanded="true" signature="2642:2669" ph="{&quot;size&quot;: '80%'...}" />
-                  <marker date="1500214414000" expanded="true" signature="2683:2883" ph="{&quot;tickmarkPlacement&quot;: 'on'...}" />
-                  <marker date="1500214414000" expanded="true" signature="2705:2821" ph="[...]" />
-                  <marker date="1500214414000" expanded="true" signature="2897:3011" ph="{&quot;gridLineInterpolation&quot;: 'polygon'...}" />
-                  <marker date="1500214414000" expanded="true" signature="3027:3157" ph="{&quot;pointFormat&quot;: '&lt;span style=&quot;color:{series.color}&quot;&gt;{series.name}: &lt;b&gt;{point.y:,.0f}%&lt;/b&gt;&lt;br/&gt;'...}" />
-                  <marker date="1500214414000" expanded="true" signature="3172:3276" ph="{&quot;align&quot;: 'bottom'...}" />
-                  <marker date="1500214414000" expanded="true" signature="3291:3725" ph="[...]" />
-                  <marker date="1500214414000" expanded="true" signature="3292:3495" ph="{&quot;name&quot;: fullName...}" />
-                  <marker date="1500214414000" expanded="true" signature="3497:3724" ph="{&quot;name&quot;: compName...}" />
-                  <marker date="1500214414000" expanded="true" signature="3727:3728" ph="{...}" />
-                  <marker date="1500214414000" expanded="true" signature="4164:4983" ph="{...}" />
-                  <marker date="1500214414000" expanded="true" signature="4554:4979" ph="{...}" />
-                  <marker date="1500214414000" expanded="true" signature="4616:4723" ph="{...}" />
-                  <marker date="1500214414000" expanded="true" signature="4727:4973" ph="{...}" />
-                  <marker date="1500214414000" expanded="true" signature="4804:4961" ph="{...}" />
+                  <marker date="1500214801000" expanded="true" signature="2391:3663" ph="{...}" />
+                  <marker date="1500214801000" expanded="true" signature="2405:2497" ph="{&quot;backgroundColor&quot;: 'rgba(1,1,1,0)'...}" />
+                  <marker date="1500214801000" expanded="true" signature="2511:2564" ph="{&quot;text&quot;: 'Player Ranking'...}" />
+                  <marker date="1500214801000" expanded="true" signature="2577:2604" ph="{&quot;size&quot;: '80%'...}" />
+                  <marker date="1500214801000" expanded="true" signature="2618:2818" ph="{&quot;tickmarkPlacement&quot;: 'on'...}" />
+                  <marker date="1500214801000" expanded="true" signature="2640:2756" ph="[...]" />
+                  <marker date="1500214801000" expanded="true" signature="2832:2946" ph="{&quot;gridLineInterpolation&quot;: 'polygon'...}" />
+                  <marker date="1500214801000" expanded="true" signature="2962:3092" ph="{&quot;pointFormat&quot;: '&lt;span style=&quot;color:{series.color}&quot;&gt;{series.name}: &lt;b&gt;{point.y:,.0f}%&lt;/b&gt;&lt;br/&gt;'...}" />
+                  <marker date="1500214801000" expanded="true" signature="3107:3211" ph="{&quot;align&quot;: 'bottom'...}" />
+                  <marker date="1500214801000" expanded="true" signature="3226:3660" ph="[...]" />
+                  <marker date="1500214801000" expanded="true" signature="3227:3430" ph="{&quot;name&quot;: fullName...}" />
+                  <marker date="1500214801000" expanded="true" signature="3432:3659" ph="{&quot;name&quot;: compName...}" />
+                  <marker date="1500214801000" expanded="true" signature="3662:3663" ph="{...}" />
+                  <marker date="1500214801000" expanded="true" signature="4099:4918" ph="{...}" />
+                  <marker date="1500214801000" expanded="true" signature="4489:4914" ph="{...}" />
+                  <marker date="1500214801000" expanded="true" signature="4551:4658" ph="{...}" />
+                  <marker date="1500214801000" expanded="true" signature="4662:4908" ph="{...}" />
+                  <marker date="1500214801000" expanded="true" signature="4739:4896" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -307,12 +307,12 @@
       <updated>1497124114742</updated>
       <workItem from="1497124116966" duration="9620000" />
       <workItem from="1497190336215" duration="809000" />
-      <workItem from="1500164613919" duration="3762000" />
+      <workItem from="1500164613919" duration="4068000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14191000" />
+    <option name="totallyTimeSpent" value="14497000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="716" extended-state="6" />
@@ -468,27 +468,27 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="259">
-            <caret line="121" column="4" lean-forward="false" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
+          <first_editor relative-caret-position="400">
+            <caret line="47" column="52" lean-forward="true" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
             <folding>
-              <marker date="1500214414000" expanded="true" signature="2456:3728" ph="{...}" />
-              <marker date="1500214414000" expanded="true" signature="2470:2562" ph="{&quot;backgroundColor&quot;: 'rgba(1,1,1,0)'...}" />
-              <marker date="1500214414000" expanded="true" signature="2576:2629" ph="{&quot;text&quot;: 'Player Ranking'...}" />
-              <marker date="1500214414000" expanded="true" signature="2642:2669" ph="{&quot;size&quot;: '80%'...}" />
-              <marker date="1500214414000" expanded="true" signature="2683:2883" ph="{&quot;tickmarkPlacement&quot;: 'on'...}" />
-              <marker date="1500214414000" expanded="true" signature="2705:2821" ph="[...]" />
-              <marker date="1500214414000" expanded="true" signature="2897:3011" ph="{&quot;gridLineInterpolation&quot;: 'polygon'...}" />
-              <marker date="1500214414000" expanded="true" signature="3027:3157" ph="{&quot;pointFormat&quot;: '&lt;span style=&quot;color:{series.color}&quot;&gt;{series.name}: &lt;b&gt;{point.y:,.0f}%&lt;/b&gt;&lt;br/&gt;'...}" />
-              <marker date="1500214414000" expanded="true" signature="3172:3276" ph="{&quot;align&quot;: 'bottom'...}" />
-              <marker date="1500214414000" expanded="true" signature="3291:3725" ph="[...]" />
-              <marker date="1500214414000" expanded="true" signature="3292:3495" ph="{&quot;name&quot;: fullName...}" />
-              <marker date="1500214414000" expanded="true" signature="3497:3724" ph="{&quot;name&quot;: compName...}" />
-              <marker date="1500214414000" expanded="true" signature="3727:3728" ph="{...}" />
-              <marker date="1500214414000" expanded="true" signature="4164:4983" ph="{...}" />
-              <marker date="1500214414000" expanded="true" signature="4554:4979" ph="{...}" />
-              <marker date="1500214414000" expanded="true" signature="4616:4723" ph="{...}" />
-              <marker date="1500214414000" expanded="true" signature="4727:4973" ph="{...}" />
-              <marker date="1500214414000" expanded="true" signature="4804:4961" ph="{...}" />
+              <marker date="1500214801000" expanded="true" signature="2391:3663" ph="{...}" />
+              <marker date="1500214801000" expanded="true" signature="2405:2497" ph="{&quot;backgroundColor&quot;: 'rgba(1,1,1,0)'...}" />
+              <marker date="1500214801000" expanded="true" signature="2511:2564" ph="{&quot;text&quot;: 'Player Ranking'...}" />
+              <marker date="1500214801000" expanded="true" signature="2577:2604" ph="{&quot;size&quot;: '80%'...}" />
+              <marker date="1500214801000" expanded="true" signature="2618:2818" ph="{&quot;tickmarkPlacement&quot;: 'on'...}" />
+              <marker date="1500214801000" expanded="true" signature="2640:2756" ph="[...]" />
+              <marker date="1500214801000" expanded="true" signature="2832:2946" ph="{&quot;gridLineInterpolation&quot;: 'polygon'...}" />
+              <marker date="1500214801000" expanded="true" signature="2962:3092" ph="{&quot;pointFormat&quot;: '&lt;span style=&quot;color:{series.color}&quot;&gt;{series.name}: &lt;b&gt;{point.y:,.0f}%&lt;/b&gt;&lt;br/&gt;'...}" />
+              <marker date="1500214801000" expanded="true" signature="3107:3211" ph="{&quot;align&quot;: 'bottom'...}" />
+              <marker date="1500214801000" expanded="true" signature="3226:3660" ph="[...]" />
+              <marker date="1500214801000" expanded="true" signature="3227:3430" ph="{&quot;name&quot;: fullName...}" />
+              <marker date="1500214801000" expanded="true" signature="3432:3659" ph="{&quot;name&quot;: compName...}" />
+              <marker date="1500214801000" expanded="true" signature="3662:3663" ph="{...}" />
+              <marker date="1500214801000" expanded="true" signature="4099:4918" ph="{...}" />
+              <marker date="1500214801000" expanded="true" signature="4489:4914" ph="{...}" />
+              <marker date="1500214801000" expanded="true" signature="4551:4658" ph="{...}" />
+              <marker date="1500214801000" expanded="true" signature="4662:4908" ph="{...}" />
+              <marker date="1500214801000" expanded="true" signature="4739:4896" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
